@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Vis &amp; Society Assignment 3</title>
+	<link rel="stylesheet" href="./Vis &amp; Society Assignment 3_files/report.css">
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 3</small>
+			Visualization Critique &amp; Redesign
+		</h1>
+
+		<p>
+			<strong>Isabel de Luis</strong> — <em>ideluis@mit.edu</em>
+		</p>
+	</header>
+
+	<main>
+		<section>
+			<h2>Reading &amp; Critique</h2>
+
+			<figure>
+				<img src="./Vis &amp; Society Assignment 3_files/covid-spiral.png" alt="">
+			</figure>
+
+			<p>
+				Insights about the data/visualization:
+			</p>
+
+			<ul>
+				<li>The late December 2021 / January 2022 surge was dramatically larger than previous waves,
+					 marking the highest case counts of the pandemic in this visualization</li>
+				<li>Cases declined to a relative low in late spring/early summer 2021 before rising again during the mid-2021 summer wave</li>
+				<li>The number of COVID cases each winter is larger than the previous years</li>
+			</ul>
+
+			<p>
+				Design Critique:
+			</p>
+
+			<p>
+			While cool-looking, this spiral design is a bit misleading in my opinion. First, it appears to imply that there were no new COVID-19 cases in the United States until
+			March 2020, since the spiral begins to expand meaningfully only around that point. In reality, the first confirmed U.S. case was reported in January 2020,
+			even though the WHO declared COVID-19 a pandemic in March 2020. By visually anchoring the early part of 2020 near zero and delaying noticeable expansion until March, the chart
+			risks reinforcing the narrative that COVID suddenly came out of nowhere, rather than gradually emerging and spreading in the preceding weeks. The center line
+			is also confusing. The shaded red band represents new case counts, yet the thin black line running through it resembles a traditional "average" reference
+			line, where values above and below signal deviation from a baseline. However, in this visualization it isn't clear what the black line represents. Is it the 7-day
+			average? Additionally, the spiral layout distorts time perception. Months further from the center occupy a larger circumference, so October 2021 visually appears longer
+			than October 2020, even though both contain the same number of days. 
+			</p>
+			<p>
+				More broadly, the radial format amplifies perceived differences in magnitude because values plotted farther from the center occupy more visual area, making later surges
+				feel more dramatic than their raw case counts alone would suggest. The chart also makes precise comparison difficult: viewers must mentally translate radial distance 
+				into case counts, and overlapping yearly spirals increase cognitive load. While the design effectively conveys the emotional intensity of the pandemic’s waves, it
+				prioritizes visual impact over analytical clarity. A conventional line chart or small multiples layout would allow for clearer comparisons across years without geometric
+				 distortion, making trends easier to interpret and reducing the risk of misleading impressions.
+			</p>
+		</section>
+
+		<section>
+			<h2>Visualization Sketches</h2>
+
+      <figure>
+				<img src="./Vis &amp; Society Assignment 3_files/Line.jpeg" alt="A line chart of the number of new COVID-19 cases from Jan 2020 - Jan 2022">
+				<figcaption>
+					New COVID-19 cases in the United States from January 2020 to Jan 2022, highlighting four major waves of infections. Key milestones are annotated
+					to contextualize fluctuations in case counts over time.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 1:
+			</p>
+
+			<ul>
+				<li>Added in annotations to contextualize different trends (for example, in May 2021 all americans were eligible for the vaccine, and in July 2021
+					the number of new COVID cases hit the lowest it had been since March 2020)
+				</li>
+				<li>Used a continuous line chart to emphasize trends, peaks, and troughs and maximize clarity</li>
+				<li>Used dashed lines to mark new years to provide temporal anchors and break the long timeline into segments</li>
+				<li>Annotations made the chart a little cluttered</li>
+			</ul>
+
+			<figure>
+				<img src="./Vis &amp; Society Assignment 3_files/heatmap.jpeg" alt="Heatmap of monthly new COVID-19 cases in the United States from 2020 - 2022">
+				<figcaption>
+					Heatmap of the monthly new COVID-19 cases in the United States from 2020 to 2022. Darker shading indicates higher case counts.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 2:
+			</p>
+
+			<ul>
+				<li>I used shading to make seasonal surges obvious</li>
+				<li>Made the x-axis months so that the seasons are aligned vertically for quick comparison</li>
+				<li>Aggregated for monthly new COVID cases to make the graph less cluttered and allow trends to be easily seen</li>
+				<li>Shading is difficult to do by hand, so may not have come out very well</li>
+			</ul>
+
+			<figure>
+				<img src="./Vis &amp; Society Assignment 3_files/area.jpeg" alt="Area plot of monthly new COVID-19 cases in the United States from Jan 2020 - Jan 2022">
+				<figcaption>
+					Comparison of monthly new COVID-19 cases in the United States across 2020, 2021, and Jan 202
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 3:
+			</p>
+
+			<ul>
+				<li>Used separate lines for each year to allow for easy comparison across months</li>
+				<li>Used area chart (as opposed to line chart) to emphasize magnitude of cases</li>
+				<li>Since 2022 is only one point, it feels like the takeaway from this chart could be that COVID just disappeared after January 2022, 
+					which it didn't, the chart just doesn't include data from beyond Jan 2022. 
+				</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Final Visualization Design</h2>
+      
+			<figure>
+				<img src="./Vis &amp; Society Assignment 3_files/image.png" alt="Plot of New COVID-19 infections in the United States">
+				<figcaption>
+					Daily new COVID-19 cases in the United States (green bars) with a weekly moving average trend line (red), from December 
+					2019 to September 2022. Major milestones, including the first confirmed U.S. case, implementation of shutdowns, vaccine rollout,
+					and the emergence of the Omicron variant, are annotated to contextualize successive waves, with the sharp Omicron surge in early 2022 representing the highest recorded peak during the period shown.
+				</figcaption>
+			</figure>
+
+		</section>
+
+		<section>
+			<h2>Final Writeup</h2>
+
+			<p>
+				My goal with the final design was to make the magnitude and timing of COVID-19 surges easy to understand while still preserving the underlying 
+				day-to-day variability that shaped public perception and policy. To do that, I combined daily bars (raw reports) with a weekly moving-average 
+				line (signal). The bars communicate the volatility and reporting artifacts inherent in daily case data, while the smoothed line makes the 
+				broader “wave” structure legible without requiring the viewer to mentally average noisy fluctuations. I also added event annotations (first 
+				confirmed case, shutdowns, vaccine rollout milestones, Omicron detection/dominance) to connect peaks and declines to real-world context, helping 
+				the chart move beyond “what happened” toward “what might have contributed,” without claiming strict causality.
+      </p>
+
+			<p>
+        This redesign directly addresses my original critique of the spiral chart by eliminating the misleading implications and distortions created by radial layout: the timeline is continuous and proportional 
+		(no month-length distortion), the trend line is explicitly defined (weekly average rather than an ambiguous center line), and the early-pandemic period is visible, reducing the impression that cases 
+		“begin” only at the pandemic declaration. That said, I encountered real tradeoffs. The largest tension was between faithfully representing extreme peaks (especially Omicron) and keeping earlier waves readable. 
+		Another tradeoff was between clarity and context: annotations improve interpretability, but too many labels risk cluttering the visual and implying causal relationships more strongly than the data alone 
+		supports. What didn’t work as anticipated was how much the raw daily bars still dominate attention during high-variance periods; even with smoothing, the chart can feel busy. If I iterated further, 
+		I would likely lighten the bars, reduce gridline prominence, and consider a second panel or zoomed inset to support comparisons among smaller waves without sacrificing the integrity of the full-scale view.
+      </p>
+		</section>
+	</main>
+
+
+</body></html>
